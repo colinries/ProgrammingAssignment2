@@ -10,13 +10,13 @@ makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
     set <- function(y) {
         x <<- y
-        m <- NULL
+        inv <- NULL
     }
     get <- function() x
     setinv <- function(verse) inv <<- verse
     getinv <- function() inv
 
-    list(inv=inv, get=get, setinv=setinv, getmean=getmean)
+    list(inv=inv, get=get, setinv=setinv, getinv=getinv)
 
 }
 
